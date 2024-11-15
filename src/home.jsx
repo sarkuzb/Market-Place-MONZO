@@ -12,16 +12,13 @@ function Home() {
   const [cartCount, setCartCount] = useState(0);
 
   const toggleChat = () => setIsChatOpen(!isChatOpen);
-  const toggleLogin = (e) => {
-    e.stopPropagation();
+  const toggleLogin = () => {
     setIsLoginOpen(!isLoginOpen);
   };
-  const toggleSignUp = (e) => {
-    e.stopPropagation();
+  const toggleSignUp = () => {
     setIsSignUpOpen(!isSignUpOpen);
   };
-  const toggleShoppingCart = (e) => {
-    e.stopPropagation();
+  const toggleShoppingCart = () => {
     setIsShoppingCart(!isShoppingCartOpen);
   };
 
@@ -78,11 +75,11 @@ function Home() {
             Search
           </button>
         </div>
-        <div
-          onClick={toggleShoppingCart}
-          className="flex items-center flex-row gap-2"
-        >
-          <div className="flex bg-gray-200 p-2 rounded hover:bg-gray-300 transition duration-150 cursor-pointer relative">
+        <div className="flex items-center flex-row gap-2">
+          <div
+            onClick={toggleShoppingCart}
+            className="flex bg-gray-200 p-2 rounded hover:bg-gray-300 transition duration-150 cursor-pointer relative"
+          >
             <img className="w-6" src={shoppingCart} alt="shopping-cart" />
             {cartCount > 0 && (
               <p className="Notification absolute bg-orange-500 text-xs text-white">
