@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Header {
+  max-width: 1156px;
+  margin: auto;
+}
+
+.Container {
+  max-width: 1156px;
+  margin: auto;
+  padding-left: 2rem;
+}
+
+.Category-and-product {
+  display: flex;
+  flex-direction: row;
+  max-width: 1156px;
+  margin: auto;
+}
+
+.Rating {
+  font-size: 9px;
+  color: gray;
+}
+
+.secondContainer:hover {
+  box-shadow: 0 0 25px rgb(233, 233, 233);
+  transition: 300ms;
+}
+
+.Font-designer {
+  font-family: designer;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "designer";
+  src: url("./assets/font/Designer.otf");
+}
+
+.Input-One {
+  display: flex;
+  flex-direction: column;
+}
+
+.Notification {
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  border-radius: 20rem;
+  font-size: 8px;
+  margin: 0 0 0 1rem;
+}
+
+.chat-open {
+  box-shadow: 0 0 15px rgb(207, 207, 207);
+}
